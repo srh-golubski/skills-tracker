@@ -34,7 +34,7 @@ public class SkillsController {
                 "<body>" +
                     "<form method='post' action='result'>" +
                         "<input type='text' name='name'/>" +
-                "<input list='languages' name='firstLanguage'/>" +
+                "<input list='languages' name='firstLanguage' label='First Language'/>" +
                 "<input list='languages' name='secondLanguage'/>" +
                 "<input list='languages' name='thirdLanguage'/>" +
                 "<input type='submit' value='Continue'>" +
@@ -54,7 +54,7 @@ public class SkillsController {
     public String showResult(@RequestParam String name, @RequestParam String firstLanguage, @RequestParam String secondLanguage, @RequestParam String thirdLanguage) {
         String html =  "<html>" +
                 "<body>" +
-                "<p>Hello, " + name + "</p>" +
+                "<p>Hello, friend" + name + "</p>" +
                 "<ol>" +
                 "<li>"+ firstLanguage +"</li>" +
                 "<li>"+ secondLanguage +"</li>" +
